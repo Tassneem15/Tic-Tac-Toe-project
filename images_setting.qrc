@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images_settings">
+        <file>cake-slice.png</file>
+        <file>duel.png</file>
+        <file>eins1tein.png</file>
+        <file>humanoid.png</file>
+    </qresource>
+</RCC>
