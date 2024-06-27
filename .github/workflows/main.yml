@@ -1,43 +1,41 @@
-name: CI
+name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  build-and-test:
+  build_and_test:  # Combined build and test job (optional)
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    # Node.js setup and steps
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake g++ make
 
-    - name: Install Node.js dependencies
-      run: npm install
+      - name: Install Qt dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qtbase5-dev qt5-qmake xvfb
 
-    - name: Run Node.js tests
-      run: npm test
+      - name: Build project
+        run: |
+          mkdir build  # Create build directory
+          cd build
+          cmake ..  # Configure build using CMakelists.txt
+          make       # Build the project
 
-    - name: Build Node.js project
-      run: npm run build
+      - name: Run loginpage_test
+        working-directory: loginpage_test  # Change directory to test directory
+        run: |
+          qmake loginpage_test.pro  # Generate Makefile using QMake
+          make                       # Build the loginpage_test executable
+          xvfb-run --auto-servernum --server-args='-screen 0 1024x768x24' ./loginpage_test  # Run the test with Xvfb for display
 
-    # Qt/C++ setup and steps
-    - name: Install Qt dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y qtbase5-dev qt5-qmake xvfb
-
-    - name: Build and test 'loginpage_test'
-      run: |
-        cd loginpage_test
-        qmake loginpage_test.pro
-        make
-        xvfb-run --auto-servernum --server-args='-screen 0 1024x768x24' ./loginpage_test
