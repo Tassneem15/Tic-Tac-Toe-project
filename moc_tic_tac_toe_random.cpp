@@ -1,12 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'history.h'
+** Meta object code from reading C++ file 'tic_tac_toe_random.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../history.h"
+#include "../../../tic_tac_toe_random.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -16,7 +16,7 @@
 
 #include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'history.h' doesn't include <QObject>."
+#error "The header file 'tic_tac_toe_random.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.7.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -33,16 +33,16 @@ QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
 
 #ifdef QT_MOC_HAS_STRINGDATA
-struct qt_meta_stringdata_CLASSHistoryENDCLASS_t {};
-constexpr auto qt_meta_stringdata_CLASSHistoryENDCLASS = QtMocHelpers::stringData(
-    "History"
+struct qt_meta_stringdata_CLASStic_tac_toe_randomENDCLASS_t {};
+constexpr auto qt_meta_stringdata_CLASStic_tac_toe_randomENDCLASS = QtMocHelpers::stringData(
+    "tic_tac_toe_random"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
 #endif // !QT_MOC_HAS_STRINGDATA
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_CLASSHistoryENDCLASS[] = {
+Q_CONSTINIT static const uint qt_meta_data_CLASStic_tac_toe_randomENDCLASS[] = {
 
  // content:
       12,       // revision
@@ -58,20 +58,20 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHistoryENDCLASS[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject History::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject tic_tac_toe_random::staticMetaObject = { {
     QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_CLASSHistoryENDCLASS.offsetsAndSizes,
-    qt_meta_data_CLASSHistoryENDCLASS,
+    qt_meta_stringdata_CLASStic_tac_toe_randomENDCLASS.offsetsAndSizes,
+    qt_meta_data_CLASStic_tac_toe_randomENDCLASS,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSHistoryENDCLASS_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASStic_tac_toe_randomENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<History, std::true_type>
+        QtPrivate::TypeAndForceComplete<tic_tac_toe_random, std::true_type>
     >,
     nullptr
 } };
 
-void History::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void tic_tac_toe_random::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     (void)_o;
     (void)_id;
@@ -79,20 +79,20 @@ void History::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
     (void)_a;
 }
 
-const QMetaObject *History::metaObject() const
+const QMetaObject *tic_tac_toe_random::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *History::qt_metacast(const char *_clname)
+void *tic_tac_toe_random::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_CLASSHistoryENDCLASS.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_CLASStic_tac_toe_randomENDCLASS.stringdata0))
         return static_cast<void*>(this);
     return QMainWindow::qt_metacast(_clname);
 }
 
-int History::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int tic_tac_toe_random::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
     return _id;

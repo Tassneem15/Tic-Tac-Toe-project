@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../tic_tac_toe_rand.h"
+#include "../../../tic_tac_toe_rand.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>

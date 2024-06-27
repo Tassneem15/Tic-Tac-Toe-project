@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../sec_player_login.h"
+#include "../../../sec_player_login.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>

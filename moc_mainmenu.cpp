@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../mainmenu.h"
+#include "../../../mainmenu.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
