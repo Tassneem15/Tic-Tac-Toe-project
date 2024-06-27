@@ -1,0 +1,16 @@
+debug/history.o
+debug/main.o
+debug/mainmenu.o
+debug/mainwindow.o
+debug/sec_player_login.o
+debug/tic_tac_toe.o
+debug/tic_tac_toe_ai.o
+debug/tic_tac_toe_rand.o
+debug/tst_loginpage_test.o
+debug/moc_history.o
+debug/moc_mainmenu.o
+debug/moc_mainwindow.o
+debug/moc_sec_player_login.o
+debug/moc_tic_tac_toe.o
+debug/moc_tic_tac_toe_ai.o
+debug/moc_tic_tac_toe_rand.o
