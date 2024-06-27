@@ -1,0 +1,16 @@
+release/history.o
+release/main.o
+release/mainmenu.o
+release/mainwindow.o
+release/sec_player_login.o
+release/tic_tac_toe.o
+release/tic_tac_toe_ai.o
+release/tic_tac_toe_rand.o
+release/tst_grid_rand_test.o
+release/moc_history.o
+release/moc_mainmenu.o
+release/moc_mainwindow.o
+release/moc_sec_player_login.o
+release/moc_tic_tac_toe.o
+release/moc_tic_tac_toe_ai.o
+release/moc_tic_tac_toe_rand.o
